@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- 画布不能通过css设置宽高，否则会拉伸变形 -->
+    <div class="contain">
+        <div id="select">
+            <h3>选择关卡：</h3>
+            <div id='menu'>
+            </div>
+
+        </div >
+            <canvas id='mycanvas' width="500" height="500"></canvas>
+            <div class="count">
+                    <img src="img/reflush.png" alt="" id='reflush'>
+                    总共走的步数:<p id=countwalk>0</p>
+                </div>
+    </div>
+
+    <!--弹出框-->
+    <div id='mark'>
+        <div id='dialog'>
+            <div id='top'>
+                <button id="close">x</button>
+            </div>
+            <div id='content'>恭喜你！游戏胜利！</div>
+            <div id="footer">
+                <button id='next'>下一局</button>
+                <button id='again'>重玩</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="data.js"></script>
+<script src="init.js"></script>
+<script src="game.js"></script>
+<script src="dialog.js"></script>
+
+</html>
