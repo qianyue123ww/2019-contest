@@ -3,11 +3,12 @@
     margin: 0;
     font-family: "微软雅黑";
 }
-button{
-      /*清除button自带样式*/
-      outline:none;
-      box-shadow:none;
-      border-color: transparent;
+
+button {
+    /*清除button自带样式*/
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
 }
 
 body {
@@ -21,60 +22,67 @@ body {
     left: 0;
     right: 0;
 }
-.contain{
+
+.contain {
     /* display: flex;
     padding: 50px; */
 }
+
 #mycanvas {
     /* background: #333333; */
     /* padding: 100px 50px; */
-    float: right;
-    margin-top:50px;
-    margin-right: 50px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
 }
 
 #select {
     /* background: #b1b1b1; */
-    
+
     /* left: 0;
     top: 0; */
     /* margin: 50px; */
     width: 30%;
     float: left;
     background: #fff;
-    color:#333;
-    border:5px solid #333;
+    color: #333;
+    border: 5px solid #333;
     border-radius: 30px;
-    margin-top:50px;
+    margin-top: 50px;
     margin-left: 50px;
     padding: 20px;
 
 }
-.count{
+
+.count {
     position: absolute;
-    right:100px;
+    right: 100px;
     bottom: 50px;
     width: 330px;
     font-size: 25px;
     font-weight: bold;
     padding: 20px;
     background: #fff;
-    color:#333;
-    border:5px solid #333;
+    color: #333;
+    border: 5px solid #333;
     border-radius: 30px;
     text-align: center;
-    margin-top:50px;
+    margin-top: 50px;
 }
-.contain p{
+
+.contain p {
     margin-left: 15px;
     display: inline;
 }
-.contain img{
+
+.contain img {
     vertical-align: middle;
 }
-.contain img{
+
+.contain img {
     cursor: pointer;
 }
+
 #menu>button {
     padding: 3px;
     margin-right: 10px;
@@ -93,73 +101,81 @@ body {
 
 #menu>button:hover {
     transform: rotate(30deg);
-    -ms-transform: rotate(30deg);		/* IE 9 */
-    -webkit-transform: rotate(30deg);	/* Safari and Chrome */
-    -o-transform: rotate(30deg);		/* Opera */
+    -ms-transform: rotate(30deg);
+    /* IE 9 */
+    -webkit-transform: rotate(30deg);
+    /* Safari and Chrome */
+    -o-transform: rotate(30deg);
+    /* Opera */
     -moz-transform: rotate(30deg);
 }
 
 /*弹出框样式*/
-#mark{
+#mark {
     /* opacity:0.5;
     filter:alpha(opacity=50);兼容IE */
-    background: rgba(0,0,0,0.5);
-	position:absolute;
-	left:0;
-	right:0;
-	bottom:0;
-	top:0;
-	/* background:#333; */
-    z-index:1;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /* background:#333; */
+    z-index: 1;
     display: none;
 }
-#dialog{
-	width:30%;
-	height:250px;
-	background:#fff;
-	position:absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	margin:auto;
-	border:5px solid #333;
-    border-radius:20px;	
+
+#dialog {
+    width: 30%;
+    height: 250px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 5px solid #333;
+    border-radius: 20px;
     box-shadow: 0 0 10px #333333;
-	/*IE不兼容box-radius和box-shadow*/
-}
-#dialog #top{
-	height:50px;
-    background:#333;
+    /*IE不兼容box-radius和box-shadow*/
 }
 
-#dialog #top>button{
-	float:right;
-	width:30px;
-	margin:10px;
-	height:30px;
-	border:1px solid #333;
-    outline:none;	
+#dialog #top {
+    height: 50px;
+    background: #333;
+}
+
+#dialog #top>button {
+    float: right;
+    width: 30px;
+    margin: 10px;
+    height: 30px;
+    border: 1px solid #333;
+    outline: none;
     cursor: pointer;
     border-radius: 5px;
     background: #fff;
 }
-#dialog #content{
-	padding:20px;
+
+#dialog #content {
+    padding: 20px;
 }
-#dialog #footer{
-	position:absolute;
-	bottom:0;
-	right:0;
-	left:0;	
+
+#dialog #footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
-#dialog #footer>button{
-	float:right;
-	width:60px;
-	height:33px;
-	padding:5px;
-    margin:10px;	
-    background:rgb(85, 84, 84);
+
+#dialog #footer>button {
+    float: right;
+    width: 60px;
+    height: 33px;
+    padding: 5px;
+    margin: 10px;
+    background: rgb(85, 84, 84);
     color: #fff;
     cursor: pointer;
     border-radius: 5px;

@@ -200,6 +200,9 @@ var levels = {
             // console.log(html);
         }
         menu.innerHTML = html;
+        menu.children[0].style.background='#e9e9e9';
+        menu.children[0].style.color='#333';
+        menu.children[0].style['font-weight']='bold';
        
 
         //事件委托
@@ -211,6 +214,11 @@ var levels = {
                 // var mapArr = levels.map[level]; //地图数据
                 level = e.target.getAttribute('data-num'); //获取层数
                 levels.onload(level);
+                //logo颜色改变
+                e.target.style.background='#e9e9e9';
+                e.target.style.color='#333';
+                e.target.style['font-weight']='bold';
+                
                 return false;
             }
         }, false);
@@ -240,7 +248,12 @@ var levels = {
         canvas.init(mapArr);
         //玩家可以开始游戏
         startgame(mapArr, level);
-
+        //菜单颜色
+        var select = document.getElementById('menu');
+        for(var i=0;i<select.children.length;i++){ 
+            select.children[i].style.background="";
+            select.children[i].style.color="";
+        }
     }
 }
 //初始化关卡菜单

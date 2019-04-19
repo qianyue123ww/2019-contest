@@ -557,6 +557,9 @@ function startgame(mapArr, lev) {
         var reflush = document.getElementById('reflush');
         reflush.onclick = function () {
             levels.onload(player.onlevel);
+            menu.children[lev].style.background='#e9e9e9';
+            menu.children[lev].style.color='#333';
+            menu.children[lev].style['font-weight']='bold';
             return;
         }
 }
